@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: gold;
+  text-align: center;
+}
+</style>
+  
+<h1>Kobe Bryant Career PPG (Made with ChartJS)</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1996-97', '1997-98', '1998-99', '1999-00', '2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07', '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16'],
+        datasets: [{
+            label: 'Kobe Bryant Career PPG',
+            backgroundColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(153,50,204)',
+            data: [7.6, 15.4, 19.9, 22.5, 28.5, 25.2, 30, 24, 27.6, 35.4, 31.6, 28.3, 26.8, 27, 25.3, 27.9, 27.3, 13.8, 22.3, 17.6]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+</body>
