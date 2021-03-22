@@ -1,11 +1,11 @@
 body {
   background-color: gold;
-  color: white;
+  color: #8A2BE2;
   text-align: center;
 }
 
 button {
-  background-color: #87ceff;
+  background-color: white;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 13px;
