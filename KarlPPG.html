@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: #87ceff;
+  text-align: center;
+}
+</style>
+<h1>Karl Malone Career PPG</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1985-86', '1986-87', '1987-88', '1988-89', '1989-90', '1990-91', '1991-92', '1992-93', '1993-94', '1994-95', '1995-96', '1996-97', '1997-98', '1998-99', '1999-00', '2000-01', '2001-02', '2002-03', '2003-04'],
+        datasets: [{
+            label: 'Karl Malone Career PPG',
+            backgroundColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(153,50,204)',
+            data: [14.9, 21.7, 27.7, 29.1, 31, 29, 28, 27, 25.2, 26.7, 25.7, 27.4, 27, 23.8, 25.5, 23.2, 22.4, 20.6, 13.2]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<p><a href="index.html">Home</p></a>
+</body>
