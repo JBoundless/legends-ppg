@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: gold;
+  text-align: center;
+}
+</style>
+<h1>Shaquille O'Neal Career PPG</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1992-93', '1993-94', '1994-95', '1995-96', '1996-97', '1997-98', '1999-00', '2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07', '2007-08', '2008-09', '2009-10'],
+        datasets: [{
+            label: "Shaquille O'Neal Career PPG",
+            backgroundColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(153,50,204)',
+            data: [23.4, 29.3, 29.3, 26.6, 26.2, 28.3, 26.3, 29.7, 28.7, 27.2, 27.5, 21.5, 22.9, 20, 17.3, 13.6, 14.2, 12.9, 17.8, 12, 9.2]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<p><a href="index.html">Home</p></a>
+</body>
