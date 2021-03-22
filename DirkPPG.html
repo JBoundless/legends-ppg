@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: gold;
+  text-align: center;
+}
+</style>
+<h1>Dirk Nowitzki Career PPG</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1998-99', '1999-00', '2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07', '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
+        datasets: [{
+            label: 'Kobe Bryant Career PPG',
+            backgroundColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(153,50,204)',
+            data: [8.2, 17.5, 21.8, 23.4, 25.1, 21.8, 26.1, 26.6, 24.6, 23.6, 25.9, 25, 23, 21.6, 17.3, 21.7, 17.3, 18.3, 14.2, 12, 7.3]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<p><a href="index.html">Home</a></p>
+</body>
