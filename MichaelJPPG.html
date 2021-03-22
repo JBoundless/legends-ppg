@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+</style>
+<h1>Michael Jordan Career PPG</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1984-85', '1985-86', '1986-87', '1987-88', '1988-89', '1989-90', '1990-91', '1991-92', '1992-93', '1994-95', '1995-96', '1996-97', '1997-98', '2001-02', '2002-03'],
+        datasets: [{
+            label: 'Michael Jordan Career PPG',
+            backgroundColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [28.2, 22.7, 37.1, 35, 32.5, 33.6, 31.5, 30.1, 32.6, 26.9, 30.4, 29.6, 28.7, 22.9, 20]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<p><a href="index.html">Home</p></a>
+</body>
