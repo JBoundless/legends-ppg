@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<body>
+  <style>
+  body {
+  background-color: white;
+  text-align: center;
+}
+</style>
+<h1>Moses Malone Career PPG</h1>
+<div class="container">
+  <canvas id="myChart" width="400" height="400"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1974-75', '1975-76', '1976-77', '1977-78', '1978-79', '1979-80', '1980-81', '1981-82', '1982-83', '1983-84', '1984-85', '1985-86', '1986-87', '1987-88', '1988-89', '1989-90', '1990-91', '1991-92', '1992-93', '1993-94', '1994-95'],
+        datasets: [{
+            label: 'Moses Malone Career PPG',
+            backgroundColor: 'rgb(153,50,204)',
+            borderColor: 'rgb(153,50,204)',
+            data: [18.8, 14.3, 13.2, 19.4, 24.8, 25.8, 27.8, 31.1, 24.5, 22.7, 24.6, 23.8, 24.1, 20.3, 20.2, 18.9, 10.6, 15.6, 4.5, 5.3, 2.9]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>
+
+<p><a href="index.html">Home</a></p>
+</body>
